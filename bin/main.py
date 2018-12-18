@@ -3,10 +3,33 @@ import os
 import subprocess
 import time
 from pathlib import Path
+
 home = str(Path.home())
+separator = os.sep
 
 
-def vpn():
+def find_directory_by_end_of_file_path(end_of_path):
+    separated_end_of_path = os.path.join(end_of_path)
+
+    for root, dirs, files in os.walk(home):
+        for f in files:
+            file_path = root + "/" + f
+            try:
+                if file_path.endswith(separated_end_of_path):
+                    return os.path.join(root)
+            except UnicodeEncodeError:
+                encoded_file_path = file_path.encode('utf-8', 'surrogateescape').decode('ISO-8859-1')
+                if encoded_file_path.endswith(separated_end_of_path):
+                    return os.path.join(root)
+
+    raise FileNotFoundError
+
+
+def replace_separator(path):
+    path.replace("/", separator)
+
+
+def connect_to_vpn():
     print("Helper: Connecting to VPN...")
     subprocess.Popen(['sudo', 'killall', 'openvpn'],
                      cwd=home,
@@ -23,11 +46,11 @@ def vpn():
                      close_fds=True)
 
 
-def selenoid(project):
+def run_selenoid(project):
     print("Helper: Running Selenoid...")
     subprocess.Popen(['./selenoid -container-network bridge1'],
                      shell=True,
-                     cwd=home + "/IdeaProjects/%s" % project,
+                     cwd=find_directory_by_end_of_file_path("selenoid"),
                      stdin=None,
                      stdout=open(os.devnull, 'wb'),
                      stderr=open(os.devnull, 'wb'),
@@ -42,7 +65,7 @@ def open_browser():
                      stdout=open(os.devnull, 'wb'),
                      stderr=open(os.devnull, 'wb'),
                      close_fds=True)
-    subprocess.Popen(["xdg-open http://jenkins-01.baexperiment.com/job/BPM%20UI%20Test%20Automation/"],
+    subprocess.Popen(["xdg-open https://jenkins-01.baexperiment.com/"],
                      shell=True,
                      stdin=None,
                      stdout=open(os.devnull, 'wb'),
@@ -54,21 +77,40 @@ def open_idea():
     print("Helper: Opening Idea...")
     subprocess.Popen(["./idea.sh"],
                      shell=True,
-                     cwd=home + "/ideaIC-2018.1.3/idea-IC-181.4892.42/bin",
+                     cwd=find_directory_by_end_of_file_path("/bin/idea.sh"),
                      stdin=None,
                      stdout=open(os.devnull, 'wb'),
                      stderr=open(os.devnull, 'wb'),
                      close_fds=True)
 
 
-# todo filefinder
-
-
-def hubstaff():
+def open_hubstaff():
     print("Helper: Opening Hubstaff...")
     subprocess.Popen(["./HubstaffClient.bin.x86_64"],
                      shell=True,
-                     cwd=home + "/Hubstaff/1.4.2/Hubstaff",
+                     cwd=find_directory_by_end_of_file_path("HubstaffClient.bin"),
+                     stdin=None,
+                     stdout=open(os.devnull, 'wb'),
+                     stderr=open(os.devnull, 'wb'),
+                     close_fds=True)
+
+
+def open_slack():
+    print("Helper: Opening Slack...")
+    subprocess.Popen(["slack"],
+                     shell=True,
+                     cwd=home,
+                     stdin=None,
+                     stdout=open(os.devnull, 'wb'),
+                     stderr=open(os.devnull, 'wb'),
+                     close_fds=True)
+
+
+def open_file_manager():
+    print("Helper: Opening File Manager...")
+    subprocess.Popen(["nautilus %s" % home],
+                     shell=True,
+                     cwd=home,
                      stdin=None,
                      stdout=open(os.devnull, 'wb'),
                      stderr=open(os.devnull, 'wb'),
@@ -80,25 +122,33 @@ def welcome():
 
 
 welcome()
-input_string = input("Enter the characters corresponding to the items:\n"
-                     "Example: 'vsi'\n\n"
-                     "v - Connect to VPN\n"
-                     "s - Run Selenoid\n"
-                     "b - Open Browser\n"
-                     "i - Open Idea\n"
-                     "h - Hubstaff\n\n")
+input_string = input("Enter the numbers corresponding to the items:\n"
+                     "Example: '341'\n\n"
+                     "1 - Connect to VPN\n"
+                     "2 - Run Selenoid\n"
+                     "3 - Open Browser\n"
+                     "4 - Open Idea\n"
+                     "5 - Open Hubstaff\n"
+                     "6 - Open Slack\n"
+                     "7 - Open File Manager\n\n")
 
-if 'v' in input_string:
-    vpn()
+if '1' in input_string:
+    connect_to_vpn()
 
-if 's' in input_string:
-    selenoid("bpm-automation-testing-master")
+if '2' in input_string:
+    run_selenoid("bpm-automation-testing-master")
 
-if 'b' in input_string:
+if '3' in input_string:
     open_browser()
 
-if 'i' in input_string:
+if '4' in input_string:
     open_idea()
 
-if 'h' in input_string:
-    hubstaff()
+if '5' in input_string:
+    open_hubstaff()
+
+if '6' in input_string:
+    open_slack()
+
+if '7' in input_string:
+    open_file_manager()

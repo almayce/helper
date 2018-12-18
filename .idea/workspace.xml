@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d5db3c5-8cf5-4213-ba6c-acfd0e9ae0e1" name="Default" comment="" />
+    <list default="true" id="0d5db3c5-8cf5-4213-ba6c-acfd0e9ae0e1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +18,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1397">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-659">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -24,10 +27,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="subprocess.pyi" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3/subprocess.pyi">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-606">
+              <caret line="288" column="21" selection-start-line="288" selection-start-column="21" selection-end-line="288" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posixpath.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3.6/posixpath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
+            <state relative-caret-position="4465">
               <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
             </state>
           </provider>
@@ -53,6 +74,16 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -69,24 +100,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/bin/test.py" />
         <option value="$PROJECT_DIR$/bin/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="592" />
-    <option name="y" value="96" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="649" />
+    <option name="y" value="161" />
     <option name="width" value="627" />
     <option name="height" value="611" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,6 +134,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -169,6 +202,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="helper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -191,9 +242,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -210,8 +266,17 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="-10" width="1541" height="910" extended-state="6" />
+    <frame x="649" y="161" width="627" height="611" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
@@ -222,22 +287,22 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2366127" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32875" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18394649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.50774527" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35125" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -247,6 +312,168 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/posixpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17461">
+          <caret line="921" selection-start-line="921" selection-end-line="921" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25517">
+          <caret line="1343" selection-start-line="1343" selection-end-line="1343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17461">
+          <caret line="921" selection-start-line="921" selection-end-line="921" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25517">
+          <caret line="1343" selection-start-line="1343" selection-end-line="1343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17461">
+          <caret line="921" selection-start-line="921" selection-end-line="921" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25517">
+          <caret line="1343" selection-start-line="1343" selection-end-line="1343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17461">
+          <caret line="921" selection-start-line="921" selection-end-line="921" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25517">
+          <caret line="1343" selection-start-line="1343" selection-end-line="1343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17461">
+          <caret line="921" selection-start-line="921" selection-end-line="921" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25517">
+          <caret line="1343" selection-start-line="1343" selection-end-line="1343" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -287,15 +514,30 @@
     </entry>
     <entry file="file://$USER_HOME$/.IdeaIC2018.1/system/python_stubs/-1247971763/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="4465">
           <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/posixpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/test.py" />
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3/subprocess.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-606">
+          <caret line="288" column="21" selection-start-line="288" selection-start-column="21" selection-end-line="288" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1397">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-659">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
